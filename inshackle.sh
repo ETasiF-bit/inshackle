@@ -114,7 +114,7 @@ break
 
 fi
 
-let count+=1
+let count+=10
 
 done
 
@@ -201,7 +201,7 @@ break
 
 fi
 echo $count
-let count+=1
+let count+=10
 
 done
 
@@ -270,7 +270,7 @@ fi
 
 fi
 
-let count+=1
+let count+=10
 
 done
 
@@ -399,7 +399,7 @@ else
 printf "\e[1;92mOK\e[0m\n"
 fi
 
-sleep 3
+sleep 1
 done
 
 
@@ -412,7 +412,7 @@ increase_followers() {
 printf "\e[1;77m[\e[0m\e[1;31m+\e[0m\e[1;77m] This technique consists of following/unfolling celebgrams\e[0m\n"
 printf "\e[1;77m[\e[0m\e[1;31m+\e[0m\e[1;77m] It can increase your followers up to about +30 in 1 hour \e[0m\n"
 printf "\e[1;77m[\e[0m\e[1;31m+\e[0m\e[1;77m]\e[0m\e[1;93m Press Ctrl + C to stop \e[0m\n"
-sleep 5
+sleep 2
 
 username_id=$(curl -L -s 'https://www.instagram.com/'$user'' > getid && grep -o  'profilePage_[0-9]*.' getid | cut -d "_" -f2 | tr -d '"')
 
@@ -464,11 +464,11 @@ else
 printf "\e[1;92mOK\e[0m\n"
 fi
 
-sleep 3
+sleep 2
 
 done
 printf "\e[1;31m[\e[0m\e[1;77m+\e[0m\e[1;31m]\e[0m\e[1;77m Sleeping 60 secs...\e[0m\n"
-sleep 60
+sleep 10
 #unfollow
 for celeb in $(cat celeb_id); do
 data='{"_uuid":"'$guid'", "_uid":"'$username_id'", "user_id":"'$celeb'", "_csrftoken":"'$var2'"}'
@@ -485,8 +485,8 @@ fi
 
 sleep 3
 done
-printf "\e[1;31m[\e[0m\e[1;77m+\e[0m\e[1;31m]\e[0m\e[1;77m Sleeping 60 secs...\e[0m\n"
-sleep 60
+printf "\e[1;31m[\e[0m\e[1;77m+\e[0m\e[1;31m]\e[0m\e[1;77m Sleeping 10 secs...\e[0m\n"
+sleep 10
 
 
 done
