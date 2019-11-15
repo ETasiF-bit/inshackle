@@ -114,7 +114,7 @@ break
 
 fi
 
-let count+=1
+let count+=10
 
 done
 
@@ -201,7 +201,7 @@ break
 
 fi
 echo $count
-let count+=1
+let count+=10
 
 done
 
@@ -270,7 +270,7 @@ fi
 
 fi
 
-let count+=1
+let count+=10
 
 done
 
